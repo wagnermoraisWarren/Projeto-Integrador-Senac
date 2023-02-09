@@ -1,32 +1,44 @@
 <template>
   <div id="app">
-    <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </nav>
-    <router-view/>
+    <transition name="fade" mode="out-in">
+      <router-view/>
+    </transition>
   </div>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300;400;500;700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;500&display=swap');
 
-nav {
-  padding: 30px;
-}
+  :root {
+    --font-poppins: 'Poppins', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-roboto: 'Roboto', sans-serif;
+    --main-blue: hsl(217, 64%, 31%);
+    --main-orange: hsl(45, 100%, 50%);
+    --main-dark: hsl(210, 32%, 9%);
+    --main-white: hsl(180, 22%, 90%);
+    --primary-cream: hsl(52, 19%, 85%);
+  }
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
 
-nav a.router-link-exact-active {
-  color: #42b983;
-}
+  .fade-enter, .fade-leave-to {
+    opacity: 0;
+    transform: translateX(-2em);       
+  }
+
+  .fade-enter-active, .fade-leave-active {
+    transition: all 200ms ease;
+  }
 </style>
