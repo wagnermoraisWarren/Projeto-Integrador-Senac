@@ -64,7 +64,7 @@
   }
   
   .news {
-    min-width: 480px;
+    min-width: 500px;
   }
   
   input {

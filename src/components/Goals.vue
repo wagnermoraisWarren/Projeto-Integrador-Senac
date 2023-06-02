@@ -86,11 +86,11 @@
   <style scoped>
   .goals-section {
     display: flex;
-    justify-content: space-around;
+    width: 80%;
+    justify-content: space-between;
     align-items: center;
     color: #fff;
-    gap: 2rem;
-    margin: 2rem 0;
+    margin: 2rem auto;
   }
   
   .goal-box {

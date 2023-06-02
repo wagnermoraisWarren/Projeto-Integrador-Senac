@@ -37,8 +37,7 @@ html {
 }
 
 body {
-  height: 100%;
-  background: var(--primary-dark-low);
+  background: hsl(210, 17%, 9%);
   color: #fff;
 }
 
@@ -50,10 +49,10 @@ body {
   text-decoration: none;
 }
 
-.header-wrapper {
+/* .header-wrapper {
   margin: 0 auto;
   width: 1450px;
-}
+} */
 
 .fade-enter,
 .fade-leave-to {

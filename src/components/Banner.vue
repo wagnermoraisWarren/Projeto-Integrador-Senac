@@ -1,19 +1,37 @@
 <template>
     <section class="banner">
-      <div class="about">
-        <h1>Title Here</h1>
-        <p>
-          <!-- <img src="https://cdn-icons-png.flaticon.com/512/2985/2985162.png" alt=""> -->
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
-          similique delectus officiis doloremque excepturi veritatis tempora eum
-          dolore distinctio, sed saepe quidem dolores odit illum eos deleniti
-          quisquam omnis exercitationem libero. Aspernatur et recusandae aperiam,
-          expedita nisi vel totam voluptatibus quisquam optio. Recusandae esse
-          excepturi illo ratione, fugiat omnis quo?
-        </p>
-      </div>
-      <div class="banner-button-box">
-        <button>Inscrever-se</button>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="@/assets/carousel/carousel-gym-1-p.jpg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem Ipsum</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo quam debitis vitae quisquam nihil!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="@/assets/carousel/carousel-gym-2-p.jpg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem Ipsum</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo quam debitis vitae quisquam nihil!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="@/assets/carousel/carousel-food-3-p.jpg" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Lorem Ipsum</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero explicabo quam debitis vitae quisquam nihil!</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
     </section>
   </template>
@@ -26,48 +44,22 @@
   
   <style scoped>
   .banner {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 91vh;
+    height: 70vh !important;
+    background: dodgerblue;
+  }
+
+  .carousel{
+    height: 100% !important;
   }
   
-  .about {
-    padding: 2rem 1rem;
-    min-height: 40%;
-    max-width: 650px;
-    border: none;
-    border-radius: 5px;
+  .carousel-inner{
+    height: 100% !important;
   }
-  
-  .about h1 {
-    font-family: var(--font-lato);
-    font-size: 3rem;
-    color: var(--main-dark);
+  .carousel-item{
+    height: 100%;
   }
-  
-  .about p {
-    font-size: 1.2rem;
-    text-align: justify;
-    color: var(--main-white);
-    font-family: var(--font-roboto);
-  }
-  
-  .banner button {
-    padding: 1rem;
-    width: 15rem;
-    border: none;
-    border-radius: 5px;
-    font-family: var(--font-poppins);
-    font-size: 1.1rem;
-    font-weight: 700;
-    background: var(--main-dark-low);
-    color: var(--main-white);
-    cursor: pointer;
-    transition: 200ms;
-  }
-  
-  .banner button:hover {
-    background: dodgerblue; 
+  .carousel img {
+    height: 100% !important;
+    width: 100%;
   }
   </style>
